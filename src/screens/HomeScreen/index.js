@@ -10,7 +10,7 @@ import {
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import TabBar from "react-native-underline-tabbar";
 import Icon from 'react-native-vector-icons/Ionicons'
-import Slider from '../components/Slider'
+import Slider from '../../components/Slider'
 
 const Page = ({ label }) => (
     <View style={styles.container}>
@@ -77,6 +77,8 @@ export default class Example extends Component {
 
                 </View>
                 <ScrollableTabView
+                    style={{backgroundColor:'black'}}
+                    tabBarBackgroundColor="black"
                     tabBarActiveTextColor="#FF7A00"
                     renderTabBar={() => <TabBar underlineColor="#FF7A00" tabBarTextStyle={{color:'white'}}/>}>
                     <PageHome tabLabel={{ label: "Home" }} label="Page #1" />
