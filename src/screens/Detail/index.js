@@ -252,7 +252,7 @@ const PageReaction = ({label}) => (
         <WebView
           javaScriptEnabled={true}
           domStorageEnabled={true}
-          source={{ uri: "hhttps://youtu.be/ufNnu1fvNsQ" }}
+          source={{ uri: "https://youtu.be/ufNnu1fvNsQ" }}
         />
       </View>
   </View>
