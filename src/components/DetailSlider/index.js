@@ -8,7 +8,7 @@ import Swiper from 'react-native-swiper'
 
 var styles = {
   wrapper: {
-    height:200,
+    height:300,
   },
   slide1: {
     flex: 1,
@@ -41,12 +41,12 @@ export default () => <Swiper
     autoplay={true}>
   <View style={styles.slide1}>
     {/* <Text style={styles.text}>Hello Swiper</Text> */}
-    <Image style={{flex:1}} source={{uri: "https://genknews.genkcdn.vn/2018/9/2/photo-1-15358231918141810350607.jpg"}}/>
+    <Image style={{flex:1}} source={{uri: "https://www.callofduty.com/content/dam/activision/callofduty/blackops/master/dlc/dlc1_screenshots_stadium_large_2.jpg"}}/>
   </View>
   <View style={styles.slide2}>
-    <Image style={{flex:1}} source={{uri: "https://phongvu.vn/cong-nghe/wp-content/uploads/2018/09/csgo-free.jpg"}}/>
+    <Image style={{flex:1}} source={{uri: "https://www.callofduty.com/content/dam/activision/callofduty/blackops/master/dlc/dlc1_screenshots_kowloon_large_1.jpg"}}/>
   </View>
   <View style={styles.slide3}>
-    <Image style={{flex:1}} source={{uri : "https://static.altchar.com/live/media/images/950x633_ct/10981_leak_ops_bd42765147e3022c5943b9b70e323546.jpg"}}/>
+    <Image style={{flex:1}} source={{uri : "https://www.callofduty.com/content/dam/activision/callofduty/blackops/master/dlc/dlc1_screenshots_berlinwall_large_3.jpg"}}/>
   </View>
 </Swiper>
