@@ -9,7 +9,7 @@ export default RootStack = createStackNavigator(
         Detail: DetailScreen
     },
     {
-        initialRouteName: 'Detail',
+        initialRouteName: 'Home',
         navigationOptions:
         {
             header:null

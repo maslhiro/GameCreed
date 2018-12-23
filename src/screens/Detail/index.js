@@ -270,12 +270,11 @@ export default class Example extends Component {
 
     render() {
         return (
-            <View style={{ flex: 1, padding: 5,  }}>
+            <View style={{ flex: 1,  }}>
                 <View style={{height:55,backgroundColor:'black', flexDirection:'row',alignItems:'center', padding :5}}>
-                    <Icon name="ios-arrow-back" size={30} color="#FF7A00" style={{marginLeft: 5}} onPress={()=>this.setState({showTextInput:!this.state.showTextInput})}/>
+                    <Icon name="ios-arrow-back" size={30} color="#FF7A00" style={{marginLeft: 5}} onPress={()=>this.props.navigation.goBack()}/>
                     <View style={{flex:1, backgroundColor:"transparent"}}>
-                        {!this.state.showTextInput?<Text style={{alignSelf:'center', fontWeight:'bold', fontSize:20, color:'#FF7A00'}}>Call Of Duty - Back Ops</Text>:
-                        <TextInput  underlineColorAndroid="#53ac49"/>}
+                        <Text style={{alignSelf:'center', fontWeight:'bold', fontSize:20, color:'#FF7A00'}}>Call Of Duty - Back Ops</Text>
                     </View>
                     <Icon name="ios-cart" size={30} color="#FF7A00" style={{marginRight: 5}}/>
 

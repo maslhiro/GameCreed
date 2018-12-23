@@ -8,22 +8,25 @@ import Swiper from 'react-native-swiper'
 
 var styles = {
   wrapper: {
-    height:200,
+    height:300,
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
   slide1: {
-    flex: 1,
+    flex:1,
     // justifyContent: 'center',
     // alignItems: 'center',
     backgroundColor: '#9DD6EB'
   },
   slide2: {
-    flex: 1,
+    flex:1,
+
     // justifyContent: 'center',
     // alignItems: 'center',
     backgroundColor: '#97CAE5'
   },
   slide3: {
-    flex: 1,
+   flex:1,
     // justifyContent: 'center',
     // alignItems: 'center',
     backgroundColor: '#92BBD9'
@@ -37,11 +40,11 @@ var styles = {
 
 export default () => <Swiper 
     style={styles.wrapper} 
-    showsButtons
-    autoplay={true}>
+    width= {100}
+    showsButtons>
   <View style={styles.slide1}>
     {/* <Text style={styles.text}>Hello Swiper</Text> */}
-    <Image style={{flex:1}} source={{uri: "https://genknews.genkcdn.vn/2018/9/2/photo-1-15358231918141810350607.jpg"}}/>
+    <Image style={{flex:1,}} source={{uri: "https://steamcdn-a.akamaihd.net/steam/apps/578080/header.jpg?t=1545084399"}}/>
   </View>
   <View style={styles.slide2}>
     <Image style={{flex:1}} source={{uri: "https://phongvu.vn/cong-nghe/wp-content/uploads/2018/09/csgo-free.jpg"}}/>
