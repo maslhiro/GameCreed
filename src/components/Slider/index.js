@@ -37,7 +37,8 @@ var styles = {
 
 export default () => <Swiper 
     style={styles.wrapper} 
-    showsButtons
+    dotColor="#FF7A00"
+    activeDotColor="white"
     autoplay={true}>
   <View style={styles.slide1}>
     {/* <Text style={styles.text}>Hello Swiper</Text> */}
