@@ -38,7 +38,7 @@ const PageHome = ({label, props}) => (
     <View style={styles.container}>
         <ScrollView style={{flex:1}}>
             <Slider/>
-            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:5}}>Special Deals</Text>
+            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:10}}>Special Deals</Text>
             <ScrollView
             style = {{ height: 200, padding:5, marginTop:5}}
              horizontal={true}
@@ -90,7 +90,7 @@ const PageHome = ({label, props}) => (
 
             </ScrollView>
 
-            <View style={{height:200, margin:5,flexDirection:'row',backgroundColor:'#FF7A00'}}>
+            <View style={{height:200, margin:10, marginRight: 0,flexDirection:'row',backgroundColor:'#FF7A00'}}>
                 <ImageBackground style={{flex:3}} source={spider_man}>
 
                 </ImageBackground>
@@ -107,7 +107,7 @@ const PageHome = ({label, props}) => (
                 </View>
             </View>
 
-            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:5}}>New Release </Text>
+            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:10}}>New Release </Text>
             <ScrollView
             style = {{ height: 200, padding:5, marginTop:5}}
              horizontal={true}
@@ -294,6 +294,66 @@ const PageTrending = ({label,props}) => (
     </View>
 )
 
+const PageSignIn = ({ label, props }) => (
+    <View style={styles.container}>
+        <View style={{ marginHorizontal: 20, marginVertical: 10, backgroundColor: 'white', borderRadius: 20, }}>
+            <TextInput
+                style={{ marginHorizontal: 10 }}
+                placeholder="Username"
+                placeholderTextColor="black"
+                underlineColorAndroid="white" />
+        </View>
+
+        <View style={{ marginHorizontal: 20, marginVertical: 10, backgroundColor: 'white', borderRadius: 20, }}>
+            <TextInput
+                style={{ marginHorizontal: 10 }}
+                placeholder="Password"
+                secureTextEntry={true}
+                placeholderTextColor="black"
+                underlineColorAndroid="white" />
+        </View>
+
+        <TouchableOpacity style={{ marginHorizontal: 20, marginVertical: 10, backgroundColor: '#FF7A00', borderRadius: 20, alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ margin: 10, color: 'white' }}>Sign In</Text>
+        </TouchableOpacity>
+
+        <View style={{flexDirection:'row', margin: 5, justifyContent:'center'}}>
+            <Text style={{color:'white'}}>Don't have account ?</Text>
+            <TouchableOpacity onPress={()=>{}}>
+                <Text style={{color:'#FF7A00'}}> Sign Up Now</Text>
+            </TouchableOpacity>
+        
+        </View>
+    </View>
+)
+
+const PageContact = ({ label, props }) => (
+    <View style={styles.container}>
+        <View style={{ marginHorizontal: 20, marginVertical: 10, backgroundColor: 'white', borderRadius: 20, }}>
+            <TextInput
+                style={{ marginHorizontal: 10 }}
+                placeholder="Your Email"
+                placeholderTextColor="black"
+                underlineColorAndroid="white" />
+        </View>
+
+        <View style={{ marginHorizontal: 20, marginVertical: 10, backgroundColor: 'white', borderRadius: 20, }}>
+            <TextInput
+                style={{ marginHorizontal: 10 }}
+                placeholder="Your Content"
+                multiline={true}
+                placeholderTextColor="black"
+                underlineColorAndroid="white" />
+        </View>
+
+        <TouchableOpacity style={{ marginHorizontal: 20, marginVertical: 10, backgroundColor: '#FF7A00', borderRadius: 20, alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ margin: 10, color: 'white' }}> Send </Text>
+        </TouchableOpacity>
+
+    </View>
+)
+
+
 export default class Example extends Component {
     constructor(props)
     {
@@ -329,12 +389,8 @@ export default class Example extends Component {
                     <PageHome tabLabel={{ label: "Home" }} label="Page #1" props = {this.props} />
                     <PageTrending tabLabel={{ label: "Trending", badge: 3 }} label="Page #2"  props = {this.props}   />
                     <PageBestSeller tabLabel={{ label: "BestSeller" }} label="Page #3" props = {this.props}  />
-                    <Page tabLabel={{ label: "Origin Access" }} label="Page #4 " />
-                    <Page tabLabel={{ label: "Sign In" }} label="Page #5" />
-                    <Page tabLabel={{ label: "FAQs" }} label="Page #6 " />
-                    <Page tabLabel={{ label: "About" }} label="Page #7" />
-                    <Page tabLabel={{ label: "Feedbacks" }} label="Page #8 " />
-                    <Page tabLabel={{ label: "Contact" }} label="Page #9" />
+                    <PageSignIn tabLabel={{ label: "Sign In" }} label="Page #5" />
+                    <PageContact tabLabel={{ label: "Contact" }} label="Page #8 " />
                 </ScrollableTabView>
 
             </View>
