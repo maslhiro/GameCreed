@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {
   Text,
   View,
+  TouchableOpacity,
   Image
 } from 'react-native'
 import Swiper from 'react-native-swiper'
 
 var styles = {
   wrapper: {
-    height:200,
+    height: 200,
   },
   slide1: {
     flex: 1,
@@ -35,19 +36,37 @@ var styles = {
   }
 }
 
-export default () => <Swiper 
-    style={styles.wrapper} 
-    dotColor="#FF7A00"
-    activeDotColor="white"
-    autoplay={true}>
-  <View style={styles.slide1}>
-    {/* <Text style={styles.text}>Hello Swiper</Text> */}
-    <Image style={{flex:1}} source={{uri: "https://genknews.genkcdn.vn/2018/9/2/photo-1-15358231918141810350607.jpg"}}/>
-  </View>
-  <View style={styles.slide2}>
-    <Image style={{flex:1}} source={{uri: "https://phongvu.vn/cong-nghe/wp-content/uploads/2018/09/csgo-free.jpg"}}/>
-  </View>
-  <View style={styles.slide3}>
-    <Image style={{flex:1}} source={{uri : "https://static.altchar.com/live/media/images/950x633_ct/10981_leak_ops_bd42765147e3022c5943b9b70e323546.jpg"}}/>
-  </View>
-</Swiper>
+export default class SwiperCS extends Component {
+
+  
+  render() {
+    return (
+      <Swiper
+
+        style={styles.wrapper}
+        dotColor="#FF7A00"
+        activeDotColor="white"
+        autoplay={true}>
+        <TouchableOpacity
+          onPress={()=>this.props.onPress()}
+          style={styles.slide1}>
+          {/* <Text style={styles.text}>Hello Swiper</Text> */}
+          <Image style={{ flex: 1 }} source={{ uri: "https://genknews.genkcdn.vn/2018/9/2/photo-1-15358231918141810350607.jpg" }} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={()=>this.props.onPress()}
+          style={styles.slide2}>
+          <Image style={{ flex: 1 }} source={{ uri: "https://phongvu.vn/cong-nghe/wp-content/uploads/2018/09/csgo-free.jpg" }} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={()=>this.props.onPress()}
+
+          style={styles.slide3}>
+          <Image style={{ flex: 1 }} source={{ uri: "https://static.altchar.com/live/media/images/950x633_ct/10981_leak_ops_bd42765147e3022c5943b9b70e323546.jpg" }} />
+        </TouchableOpacity>
+      </Swiper>
+    )
+  }
+}
+
+

@@ -11,7 +11,7 @@ import {
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import TabBar from "react-native-underline-tabbar";
 import Icon from 'react-native-vector-icons/Ionicons'
-import Slider from '../../components/Slider'
+import SliderCS from '../../components/Slider'
 import csgo from '../../csgo.jpg'
 import pubg from '../../pubg.jpg'
 import rust from '../../rust.jpg'
@@ -37,7 +37,7 @@ const Page = ({ label }) => (
 const PageHome = ({label, props}) => ( 
     <View style={styles.container}>
         <ScrollView style={{flex:1}}>
-            <Slider/>
+            <SliderCS onPress={()=>props.navigation.push("Detail")}/>
             <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:10}}>Special Deals</Text>
             <ScrollView
             style = {{ height: 200, padding:5, marginTop:5}}

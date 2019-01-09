@@ -285,7 +285,7 @@ export default class Example extends Component {
                     tabBarActiveTextColor="#FF7A00"
                     renderTabBar={() => <TabBar underlineColor="#FF7A00" tabBarTextStyle={{color:'white'}}/>}>
                     <PageHome tabLabel={{ label: "Home" }} label="Page #1" />
-                    <PageDecription tabLabel={{ label: "Decription", }} label="Page #2 aka Long!" />
+                    <PageDecription tabLabel={{ label: "Description", }} label="Page #2 aka Long!" />
                     <PageRequirement tabLabel={{ label: "Requirement" }} label="Page #3" />
                     <PageRating tabLabel={{ label: "Rating", badge: 9 }} label="Page #4 aka Page" />
                     <PageReaction tabLabel={{ label: "Reaction" }} label="Page #5" />
