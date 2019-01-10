@@ -38,23 +38,23 @@ const PageHome = ({label, props}) => (
     <View style={styles.container}>
         <ScrollView style={{flex:1}}>
             <SliderCS onPress={()=>props.navigation.push("Detail")}/>
-            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:10}}>Special Deals</Text>
+            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:10,marginTop:5, fontSize:12}}>Special Deals</Text>
             <ScrollView
-            style = {{ height: 200, padding:5, marginTop:5}}
+            style = {{ height: 200, marginLeft:10}}
              horizontal={true}
              >
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}} onPress={()=>props.navigation.navigate("Detail")}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5, marginLeft:0, marginTop:2}} onPress={()=>props.navigation.navigate("Detail")}>
                 <ImageBackground style={{flex:1}} source={pubg}>
 
                 </ImageBackground>
                 <View style={{height:30,backgroundColor:'#FF7A00', paddingHorizontal:5}}>
-                    <Text style={{color:'white', fontSize:10, fontWeight:'bold'}}>Player unknow batterground</Text>
+                    <Text style={{color:'white', fontSize:10, fontWeight:'bold'}}>Pubg</Text>
                     <Text style={{color:'white', fontSize:11, fontWeight:'bold',alignSelf:"flex-end"}}>̶5̶̶6̶̶.̶̶0̶̶0̶ $ 50.00 $</Text>
                 </View>
 
              </TouchableOpacity>
             
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}} onPress={()=>props.navigation.navigate("Detail")}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5, marginTop:2}} onPress={()=>props.navigation.navigate("Detail")}>
                 <ImageBackground style={{flex:1}} source={csgo}>
 
                 </ImageBackground>
@@ -66,7 +66,7 @@ const PageHome = ({label, props}) => (
              </TouchableOpacity>
           
 
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}} onPress={()=>props.navigation.navigate("Detail")}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5, marginTop:2}} onPress={()=>props.navigation.navigate("Detail")}>
                 <ImageBackground style={{flex:1}} source={little_nightmares}>
 
                 </ImageBackground>
@@ -77,7 +77,7 @@ const PageHome = ({label, props}) => (
 
              </TouchableOpacity>
 
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}} onPress={()=>props.navigation.navigate("Detail")}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5, marginTop:2}} onPress={()=>props.navigation.navigate("Detail")}>
                 <ImageBackground style={{flex:1}} source={rust}>
 
                 </ImageBackground>
@@ -107,12 +107,12 @@ const PageHome = ({label, props}) => (
                 </View>
             </View>
 
-            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:10}}>New Release </Text>
+            <Text style={{fontWeight:'bold', color:'#FF7A00',marginLeft:10,fontSize:12}}>New Release </Text>
             <ScrollView
-            style = {{ height: 200, padding:5, marginTop:5}}
+            style = {{ height: 200, marginLeft:10}}
              horizontal={true}
              >
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}} onPress={()=>props.navigation.navigate("Detail")}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5,marginLeft:0 , marginTop:2}} onPress={()=>props.navigation.navigate("Detail")}>
                 <ImageBackground style={{flex:1}} source={rainbow} resizeMode="cover">
 
                 </ImageBackground>
@@ -123,7 +123,7 @@ const PageHome = ({label, props}) => (
 
              </TouchableOpacity>
             
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}} onPress={()=>props.navigation.navigate("Detail")}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5, marginTop:2}} onPress={()=>props.navigation.navigate("Detail")}>
                 <ImageBackground style={{flex:1}} source={gta}>
 
                 </ImageBackground>
@@ -135,7 +135,7 @@ const PageHome = ({label, props}) => (
              </TouchableOpacity>
           
 
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}} onPress={()=>props.navigation.navigate("Detail")}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5, marginTop:2}} onPress={()=>props.navigation.navigate("Detail")}>
                 <ImageBackground style={{flex:1}} source={twd}>
 
                 </ImageBackground>
@@ -146,7 +146,7 @@ const PageHome = ({label, props}) => (
 
              </TouchableOpacity>
 
-             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5}}>
+             <TouchableOpacity style={{width:140,backgroundColor:'yellow', margin : 5, marginTop:2}}>
                 <ImageBackground style={{flex:1}} source={rust}>
 
                 </ImageBackground>
